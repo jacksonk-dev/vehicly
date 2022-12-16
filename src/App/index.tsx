@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="App">
-      Bikely Front
+      Bikely Front Changed
     </div>
   )
 }
