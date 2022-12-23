@@ -4,6 +4,6 @@ import LandingPage from '.';
 
 describe('Landing Page', () => {
     test('should render', () => {
-        render(<LandingPage />)
+        render(<LandingPage />);
     });
 });
