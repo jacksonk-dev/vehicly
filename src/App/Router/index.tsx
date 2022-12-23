@@ -7,4 +7,4 @@ export default createBrowserRouter([
         path: '/',
         element: <LandingPage />
     }
-])
+]);
