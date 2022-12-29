@@ -12,7 +12,7 @@ export default function LandingPage(){
             color='yellow.200'
             marginBottom='24px'
             fontFamily="'Rubik Vinyl', cursive"
-          >Bikely</Heading>
+          >Vehicly</Heading>
           <Text
             zIndex='10'
             color="white" 
@@ -20,7 +20,7 @@ export default function LandingPage(){
             fontWeight='extrabold' 
             fontSize='3xl'
           >
-              Know prices. Know great mechanics. Make life an enjoyable ride.
+            Mobile vehicle cleaning and repair services. ANYWHERE!
           </Text>
           <Image position="absolute" zIndex='9' src='src/Assets/Images/bg.png' w='800px' h='auto' />
         </Flex>
