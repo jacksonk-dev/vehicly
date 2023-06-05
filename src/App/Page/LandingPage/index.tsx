@@ -4,11 +4,11 @@ export default function LandingPage(){
   const year = new Date().getFullYear();
 
   return (
-    <Box h='100vh' w='100vw' bgGradient='linear(to-r, #000, red.400)'>
+    <Box w='100vw'>
       <Center zIndex='10' w='100%' h='100%' background='inherit' padding='24px'>
         <Flex direction='column' alignItems='center' >
           <ScaleFade initialScale={0} in>
-            <Image src='src/Assets/Images/bg.png' w='800px' h='auto' position='relative' top='-80px' />
+            <Image src='src/Assets/Images/bg.png' w='800px' h='auto' position='relative' />
           </ScaleFade>
           <Heading 
             zIndex='10'
@@ -18,7 +18,7 @@ export default function LandingPage(){
             marginBottom='24px'
             fontFamily="'Rubik Vinyl', cursive"
             textAlign='center'
-            position='relative' top='-100px'
+            position='relative'
           >Vehicly</Heading>
           <Text
             zIndex='10'
@@ -27,23 +27,23 @@ export default function LandingPage(){
             fontWeight='extrabold' 
             fontSize='3xl'
             textAlign='center'
-            position='relative' top='-100px'
+            position='relative'
           >
             Vehicle and spare parts dealership, repair, training and cleaning services. Make your order below.
           </Text>
-          <Flex marginTop='24px' display='grid' gridTemplateColumns='170px 170px' gridGap='8px' position='relative' top='-100px'>
+          <Flex marginTop='24px' display='grid' gridTemplateColumns='170px 170px' gridGap='8px' position='relative'>
             <Flex display='grid' gridTemplateColumns='170px' gridGap='8px'>
-              <Button padding='24px'>Cleaning</Button>
-              <Button padding='24px'>Repair</Button>
-              <Button padding='24px'>Stuck On Road</Button>
+              <Button padding='24px' bgColor='inherit' border='1px solid #fff' color='#fff' fontWeight='300'>Cleaning</Button>
+              <Button padding='24px' bgColor='inherit' border='1px solid #fff' color='#fff' fontWeight='300'>Repair</Button>
+              <Button padding='24px' bgColor='inherit' border='1px solid #fff' color='#fff' fontWeight='300'>Stuck On Road</Button>
             </Flex>
             <Flex display='grid' gridTemplateColumns='170px' gridGap='8px'>
-              <Button padding='24px'>Spare Parts</Button>
-              <Button padding='24px'>Buy Bike</Button>
-              <Button padding='24px'>Book Training</Button>
+              <Button padding='24px' bgColor='inherit' border='1px solid #fff' color='#fff' fontWeight='300'>Spare Parts</Button>
+              <Button padding='24px' bgColor='inherit' border='1px solid #fff' color='#fff' fontWeight='300'>Buy Bike</Button>
+              <Button padding='24px' bgColor='inherit' border='1px solid #fff' color='#fff' fontWeight='300'>Book Training</Button>
             </Flex>
           </Flex>
-          <Text color='#fff' position='fixed' bottom='16px'>&copy; Vehicly {year}</Text>
+          <Text color='#fff' margin='24px'>&copy; Vehicly {year}</Text>
         </Flex>
       </Center>
     </Box>
