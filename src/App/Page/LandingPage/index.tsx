@@ -4,7 +4,7 @@ export default function LandingPage(){
   const year = new Date().getFullYear();
 
   return (
-    <Box w='100vw'>
+    <Box w='100%'>
       <Center zIndex='10' w='100%' h='100%' background='inherit' padding='24px'>
         <Flex direction='column' alignItems='center' >
           <ScaleFade initialScale={0} in>
