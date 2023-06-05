@@ -29,7 +29,7 @@ export default function LandingPage(){
             textAlign='center'
             position='relative' top='-100px'
           >
-            Vehicle and spare parts dealership, repair, training and cleaning services. Make booking below.
+            Vehicle and spare parts dealership, repair, training and cleaning services. Make your order below.
           </Text>
           <Flex marginTop='24px' display='grid' gridTemplateColumns='170px 170px' gridGap='8px' position='relative' top='-100px'>
             <Flex display='grid' gridTemplateColumns='170px' gridGap='8px'>
