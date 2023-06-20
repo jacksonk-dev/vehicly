@@ -1,11 +1,11 @@
 {
-  "name": "bikely-frontend",
+  "name": "vehicly-frontend",
   "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "tsc && jest",
@@ -14,11 +14,11 @@
     "watch-tests": "tsc && jest --watch"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.4.3",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@chakra-ui/react": "^2.4.4",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "firebase": "^9.15.0",
-    "framer-motion": "^7.10.0",
+    "framer-motion": "^6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
