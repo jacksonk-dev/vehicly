@@ -5,10 +5,10 @@ export default function LandingPage(){
 
   return (
     <Box w='100%'>
-      <Center zIndex='10' w='100%' h='100%' background='inherit' padding='24px'>
+      <Center zIndex='10' w='100%' h='100%' padding='24px'>
         <Flex direction='column' alignItems='center' >
           <ScaleFade initialScale={0} in>
-            <Image src='src/Assets/Images/bg.png' w='800px' h='auto' position='relative' />
+            <Image src='/src/Assets/Images/bg.png' w='800px' h='auto' position='relative' />
           </ScaleFade>
           <Heading 
             zIndex='10'
