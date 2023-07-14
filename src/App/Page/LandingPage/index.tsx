@@ -1,4 +1,4 @@
-import { Flex, Center, Heading, Text, Box, Image, Button, ScaleFade } from "@chakra-ui/react";
+import { Flex, Center, Heading, Text, Box, Image, ScaleFade, Link } from "@chakra-ui/react";
 
 export default function LandingPage(){
   const year = new Date().getFullYear();
@@ -31,10 +31,19 @@ export default function LandingPage(){
           >
             Vehicle and spare parts dealership. Make your order below.
           </Text>
-          <Flex display='grid' gridTemplateColumns='170px 170px' gridGap='8px' marginTop='16px'>
-            <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Spare Parts</Button>
-            <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Buy Bike</Button>
-          </Flex>
+          <Link 
+            href="https://wa.me/c/256786202161"
+            target="_blank"
+            padding='8px 24px'
+            marginTop='24px'
+            bgColor='inherit'
+            border='1px solid'
+            borderColor='yellow.200'
+            color='#fff' fontWeight='300'
+            _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
+          >
+            Check Products
+          </Link>
           <Text color='#fff' margin='24px'>&copy; Vehicly {year}</Text>
         </Flex>
       </Center>
