@@ -29,19 +29,11 @@ export default function LandingPage(){
             textAlign='center'
             position='relative'
           >
-            Vehicle and spare parts dealership, repair, training and cleaning services. Make your order below.
+            Vehicle and spare parts dealership. Make your order below.
           </Text>
-          <Flex marginTop='24px' display='grid' gridTemplateColumns='170px 170px' gridGap='8px' position='relative'>
-            <Flex display='grid' gridTemplateColumns='170px' gridGap='8px'>
-              <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Cleaning</Button>
-              <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Repair</Button>
-              <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Stuck On Road</Button>
-            </Flex>
-            <Flex display='grid' gridTemplateColumns='170px' gridGap='8px'>
-              <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Spare Parts</Button>
-              <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Buy Bike</Button>
-              <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Book Training</Button>
-            </Flex>
+          <Flex display='grid' gridTemplateColumns='170px 170px' gridGap='8px' marginTop='16px'>
+            <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Spare Parts</Button>
+            <Button padding='24px' bgColor='inherit' border='1px solid' borderColor='yellow.200' color='#fff' fontWeight='300'>Buy Bike</Button>
           </Flex>
           <Text color='#fff' margin='24px'>&copy; Vehicly {year}</Text>
         </Flex>
