@@ -1,4 +1,5 @@
-import { Flex, Center, Heading, Text, Box, Image, ScaleFade, Link } from "@chakra-ui/react";
+import { Link as RouteLink } from "react-router-dom";
+import { Flex, Center, Heading, Text, Box, Image, ScaleFade, Link, SimpleGrid } from "@chakra-ui/react";
 
 export default function LandingPage(){
   const year = new Date().getFullYear();
@@ -29,21 +30,63 @@ export default function LandingPage(){
             textAlign='center'
             position='relative'
           >
-            Vehicle and spare parts dealership. Make your order below.
+            Vehicle, spare parts and accessories dealership. Make your order below.
           </Text>
-          <Link 
-            href="https://wa.me/c/256786202161"
-            target="_blank"
-            padding='8px 24px'
-            marginTop='24px'
-            bgColor='inherit'
-            border='1px solid'
-            borderColor='yellow.200'
-            color='#fff' fontWeight='300'
-            _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
-          >
-            Check Products
-          </Link>
+          <SimpleGrid columns={2} gap={2} marginTop='24px'>
+            <Link 
+              as={RouteLink}
+              to="/bikes"
+              textAlign='center'
+              width={{ base: "140px", sm: "180px", md: "240px" }}
+              padding='12px 24px'
+              bgColor='inherit'
+              border='1px solid'
+              borderColor='yellow.200'
+              color='#fff' fontWeight='300'
+              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
+            >
+              Bikes
+            </Link>
+            <Link 
+              as={RouteLink}
+              to="/bike-wear"
+              textAlign='center'
+              padding='12px 24px'
+              bgColor='inherit'
+              border='1px solid'
+              borderColor='yellow.200'
+              color='#fff' fontWeight='300'
+              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
+            >
+              Biker Wear
+            </Link>
+            <Link 
+              as={RouteLink}
+              to="/bike-accessories"
+              textAlign='center'
+              padding='12px 24px'
+              bgColor='inherit'
+              border='1px solid'
+              borderColor='yellow.200'
+              color='#fff' fontWeight='300'
+              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
+            >
+              Accessories
+            </Link>
+            <Link 
+              href="https://wa.me/c/256786202161"
+              target="_blank"
+              textAlign='center'
+              padding='12px 24px'
+              bgColor='inherit'
+              border='1px solid'
+              borderColor='yellow.200'
+              color='#fff' fontWeight='300'
+              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
+            >
+              WhatsApp
+            </Link>
+          </SimpleGrid>
           <Text color='#fff' margin='24px'>&copy; Vehicly {year}</Text>
         </Flex>
       </Center>
