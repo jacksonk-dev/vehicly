@@ -49,7 +49,7 @@ export default function LandingPage(){
             </Link>
             <Link 
               as={RouteLink}
-              to="/bike-wear"
+              to="/biker-wear"
               textAlign='center'
               padding='12px 24px'
               bgColor='inherit'
@@ -62,7 +62,7 @@ export default function LandingPage(){
             </Link>
             <Link 
               as={RouteLink}
-              to="/bike-accessories"
+              to="/accessories"
               textAlign='center'
               padding='12px 24px'
               bgColor='inherit'
