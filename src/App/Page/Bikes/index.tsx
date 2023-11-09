@@ -41,14 +41,14 @@ export default function BikesPage(){
               Bikes On Sale
           </Flex>
         </Heading>
-        <SimpleGrid gap={16} w='80%' columns={[1, 1, 2]} marginTop='24px'>
+        <SimpleGrid gap={16} w='80%' columns={[1, 2, 3]} marginTop='24px'>
           {
             bikes.map((bike: Bike) => (
               <SimpleGrid placeItems='center' gap={3} key={bike.id}>
                 <Text
                   zIndex='10'
                   color="yellow.200"                  
-                  fontSize='4xl'
+                  fontSize='2xl'
                   fontFamily='Alegreya SC'
                   textAlign='center'
                   style={{fontWeight: '900!important'}}
