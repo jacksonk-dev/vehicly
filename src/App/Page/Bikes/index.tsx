@@ -79,7 +79,7 @@ export default function BikesPage(){
                 <Text
                   zIndex='10'
                   color="white"  
-                  fontSize='lg'
+                  fontSize='sm'
                   display='flex'
                 >
                   <Text 
@@ -96,7 +96,7 @@ export default function BikesPage(){
                 <Text
                   zIndex='10'
                   color="white"  
-                  fontSize='lg'
+                  fontSize='sm'
                   display='flex'
                 >
                   <Text 
