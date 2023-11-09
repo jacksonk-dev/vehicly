@@ -14,7 +14,7 @@ import bikerWears, { BikerWear } from "App/Data/bikerWear";
 
 export default function BikerWearPage(){
   return (
-    <Center zIndex='10' w='100%' h='100%' padding='24px'>
+    <Center zIndex='10' w='100%' h='100%' padding='24px 12px'>
       <Flex direction='column' alignItems='center' justifyContent='center' >
         <Heading 
           zIndex='10'
@@ -43,7 +43,7 @@ export default function BikerWearPage(){
         {
           bikerWears.length
             ? (
-              <SimpleGrid gap={16} w='80%' columns={[2, 3, 3, 4]} marginTop='24px'>
+              <SimpleGrid gap={2} w='80%' columns={[1, 2, 3, 4]} marginTop='24px'>
                 {
                   bikerWears.map((bikerWear: BikerWear) => (
                     <SimpleGrid placeItems='center' gap={3} key={bikerWear.id}>
