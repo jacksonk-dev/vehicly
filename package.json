@@ -23,8 +23,12 @@
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.4.5",
-    "sort-by": "^1.2.0"
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "sort-by": "^1.2.0",
+    "swiper": "^11.0.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
@@ -35,6 +39,7 @@
     "@types/jest": "^29.2.4",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "@types/react-slick": "^0.23.12",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "@vitejs/plugin-react": "^3.0.0",
