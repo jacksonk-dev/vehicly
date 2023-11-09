@@ -44,7 +44,7 @@ export default function BikesPage(){
         <SimpleGrid gap={16} w='80%' columns={[1, 1, 2]} marginTop='24px'>
           {
             bikes.map((bike: Bike) => (
-              <SimpleGrid gap={3} key={bike.id}>
+              <SimpleGrid placeItems='center' gap={3} key={bike.id}>
                 <Text
                   zIndex='10'
                   color="yellow.200"                  
@@ -81,6 +81,7 @@ export default function BikesPage(){
                   color="white"  
                   fontSize='sm'
                   display='flex'
+                  w='100%'
                 >
                   <Text 
                     as='span' 
@@ -98,6 +99,7 @@ export default function BikesPage(){
                   color="white"  
                   fontSize='sm'
                   display='flex'
+                  w='100%'
                 >
                   <Text 
                     as='span' 
@@ -118,6 +120,7 @@ export default function BikesPage(){
                   color="white"  
                   fontSize='lg'
                   display='flex'
+                  w='100%'
                 >
                   <Text
                     as='span' 
