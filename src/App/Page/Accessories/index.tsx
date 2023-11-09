@@ -43,7 +43,7 @@ export default function AccessoriesPage(){
         {
           accessories.length
             ? (
-              <SimpleGrid gap={16} w='80%' columns={[2, 3, 3, 4]} marginTop='24px'>
+              <SimpleGrid gap={2} w='80%' columns={[1, 2, 3, 4]} marginTop='24px'>
                 {
                   accessories.map((accessory: Accessory) => (
                     <SimpleGrid placeItems='center' gap={3} key={accessory.id}>
