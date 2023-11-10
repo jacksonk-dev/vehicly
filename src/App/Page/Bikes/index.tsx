@@ -16,13 +16,13 @@ import bikes, { Bike } from 'App/Data/bikes';
 export default function BikesPage(){
   return (
     <Center zIndex='10' w='100%' h='100%' padding='24px 8px'>
-      <Flex direction='column' alignItems='center' justifyContent='center' >
+      <Flex direction='column' justifyContent='center' >
         <Heading 
           zIndex='10'
           size='2xl'
           color='yellow.200'
           marginBottom='24px'
-          fontFamily="'Rubik Vinyl', cursive"
+          fontFamily="Alegreya SC"
         >
           <Flex alignItems='center'>
             <Link 
@@ -44,7 +44,14 @@ export default function BikesPage(){
         <SimpleGrid gap={[12, 4]} columns={[1, 2, 3]} marginTop='24px'>
           {
             bikes.map((bike: Bike) => (
-              <SimpleGrid placeItems='center' gap={3} key={bike.id}>
+              <SimpleGrid 
+                placeItems='center' 
+                gap={3} 
+                key={bike.id} 
+                padding='8px 0'
+                borderRadius={5}
+                backgroundColor='#212121'
+              >
                 <Text
                   zIndex='10'
                   color="yellow.200"                  
@@ -76,66 +83,65 @@ export default function BikesPage(){
                     })
                   }
                 </Swiper>
-                <Text
-                  zIndex='10'
-                  color="white"  
-                  fontSize='sm'
-                  display='flex'
-                  w='100%'
-                >
-                  <Text 
-                    as='span' 
-                    color="yellow.200"
-                    fontFamily="Montserrat" 
+                <SimpleGrid gap={2} w='100%' padding={2}>
+                  <Text
+                    color="white"  
+                    fontSize='sm'
+                    display='flex'
+                    w='100%'
                   >
+                    <Text 
+                      as='span' 
+                      color="yellow.200"
+                      fontFamily="Montserrat" 
+                    >
                       ENGINE CAPACITY:
+                    </Text>
+                    <Text as='span' marginLeft={2}>
+                      {bike.engineCapacity}
+                    </Text>
                   </Text>
-                  <Text as='span' marginLeft={2}>
-                    {bike.engineCapacity}
-                  </Text>
-                </Text>
-                <Text
-                  zIndex='10'
-                  color="white"  
-                  fontSize='sm'
-                  display='flex'
-                  w='100%'
-                >
-                  <Text 
-                    as='span' 
-                    color="yellow.200"
-                    fontFamily="Montserrat" 
+                  <Text
+                    color="white"  
+                    fontSize='sm'
+                    display='flex'
+                    w='100%'
                   >
+                    <Text 
+                      as='span' 
+                      color="yellow.200"
+                      fontFamily="Montserrat" 
+                    >
                       EXTRA LIGHTS INCLUDED:
+                    </Text>
+                    <Text 
+                      as='span'
+                      marginLeft={2}
+                    >
+                      {bike.extraLightsIncluded}
+                    </Text>
                   </Text>
-                  <Text 
-                    as='span'
-                    marginLeft={2}
-                  >
-                    {bike.extraLightsIncluded}
-                  </Text>
-                </Text>
-                <Text
-                  zIndex='10'
-                  color="white"  
-                  fontSize='lg'
-                  display='flex'
-                  w='100%'
-                >
                   <Text
-                    as='span' 
-                    color="yellow.200"
-                    fontFamily="Montserrat" 
+                    color="white"  
+                    fontSize='sm'
+                    display='flex'
+                    w='100%'
                   >
+                    <Text
+                      as='span' 
+                      color="yellow.200"
+                      fontFamily="Montserrat" 
+                    >
                       PRICE:
+                    </Text>
+                    <Text
+                      as='span'
+                      marginLeft={2}
+                    >
+                      {bike.price}
+                    </Text>
                   </Text>
-                  <Text
-                    as='span'
-                    marginLeft={2}
-                  >
-                    {bike.price}
-                  </Text>
-                </Text>
+                </SimpleGrid>
               </SimpleGrid>
             ))
           }
