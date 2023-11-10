@@ -15,13 +15,13 @@ import bikerWears, { BikerWear } from "App/Data/bikerWear";
 export default function BikerWearPage(){
   return (
     <Center zIndex='10' w='100%' h='100%' padding='24px 8px'>
-      <Flex direction='column' alignItems='center' justifyContent='center' >
+      <Flex direction='column' justifyContent='center' >
         <Heading 
           zIndex='10'
           size='2xl'
           color='yellow.200'
           marginBottom='24px'
-          fontFamily="'Rubik Vinyl', cursive"
+          fontFamily="Alegreya SC"
         >
           <Flex alignItems='center'>
             <Link 
@@ -46,7 +46,14 @@ export default function BikerWearPage(){
               <SimpleGrid gap={[12, 4]} columns={[1, 2, 3, 4]} marginTop='24px'>
                 {
                   bikerWears.map((bikerWear: BikerWear) => (
-                    <SimpleGrid placeItems='center' gap={3} key={bikerWear.id}>
+                    <SimpleGrid
+                      placeItems='center' 
+                      gap={3} 
+                      padding='8px 0'
+                      borderRadius={5}
+                      backgroundColor='#212121'
+                      key={bikerWear.id}
+                    >
                       <Text
                         zIndex='10'
                         color="yellow.200"                  
@@ -78,45 +85,45 @@ export default function BikerWearPage(){
                           })
                         }
                       </Swiper>
-                      <Text
-                        zIndex='10'
-                        color="white"  
-                        fontSize='sm'
-                        display='flex'
-                        w='100%'
-                      >
-                        <Text 
-                          as='span' 
-                          color="yellow.200"
-                          fontFamily="Montserrat" 
-                        >
-                        Type:
-                        </Text>
-                        <Text as='span' marginLeft={2}>
-                          {bikerWear.type}
-                        </Text>
-                      </Text>
-                      <Text
-                        zIndex='10'
-                        color="white"  
-                        fontSize='lg'
-                        display='flex'
-                        w='100%'
-                      >
+                      <SimpleGrid gap={2} w='100%' padding={2}>
                         <Text
-                          as='span' 
-                          color="yellow.200"
-                          fontFamily="Montserrat" 
+                          color="white"  
+                          fontSize='sm'
+                          display='flex'
+                          w='100%'
                         >
-                        PRICE:
+                          <Text 
+                            as='span' 
+                            color="yellow.200"
+                            fontFamily="Montserrat" 
+                          >
+                          TYPE:
+                          </Text>
+                          <Text as='span' marginLeft={2}>
+                            {bikerWear.type}
+                          </Text>
                         </Text>
                         <Text
-                          as='span'
-                          marginLeft={2}
+                          color="white"  
+                          fontSize='sm'
+                          display='flex'
+                          w='100%'
                         >
-                          {bikerWear.price}
+                          <Text
+                            as='span' 
+                            color="yellow.200"
+                            fontFamily="Montserrat" 
+                          >
+                          PRICE:
+                          </Text>
+                          <Text
+                            as='span'
+                            marginLeft={2}
+                          >
+                            {bikerWear.price}
+                          </Text>
                         </Text>
-                      </Text>
+                      </SimpleGrid>
                     </SimpleGrid>
                   ))
                 }
