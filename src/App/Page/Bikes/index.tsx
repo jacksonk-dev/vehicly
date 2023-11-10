@@ -15,7 +15,7 @@ import bikes, { Bike } from 'App/Data/bikes';
 
 export default function BikesPage(){
   return (
-    <Center zIndex='10' w='100%' h='100%' padding='24px'>
+    <Center zIndex='10' w='100%' h='100%' padding='24px 8px'>
       <Flex direction='column' alignItems='center' justifyContent='center' >
         <Heading 
           zIndex='10'
@@ -41,7 +41,7 @@ export default function BikesPage(){
               Bikes On Sale
           </Flex>
         </Heading>
-        <SimpleGrid gap={2} w='80%' columns={[1, 2, 3]} marginTop='24px'>
+        <SimpleGrid gap={[12, 4]} columns={[1, 2, 3]} marginTop='24px'>
           {
             bikes.map((bike: Bike) => (
               <SimpleGrid placeItems='center' gap={3} key={bike.id}>

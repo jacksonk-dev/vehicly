@@ -9,11 +9,11 @@ export default function LandingPage(){
       <Center zIndex='10' w='100%' h='100%' padding='24px'>
         <Flex direction='column' alignItems='center' >
           <ScaleFade initialScale={0} in>
-            <Image src='Assets/Images/bg.png' w='800px' h='auto' position='relative' />
+            <Image src='Assets/Images/bg.png' w={['800px', '600px']} h='auto' position='relative' />
           </ScaleFade>
           <Heading 
             zIndex='10'
-            size='4xl'
+            size={['2xl', '3xl']}
             w='100%'
             color='yellow.200'
             marginBottom='24px'
@@ -26,13 +26,13 @@ export default function LandingPage(){
             color="white" 
             fontFamily="'Nixie One', bold" 
             fontWeight='extrabold' 
-            fontSize='3xl'
+            fontSize={['xl', '2xl', '3xl']}
             textAlign='center'
             position='relative'
           >
             Vehicle, spare parts and accessories dealership. Make your order below.
           </Text>
-          <SimpleGrid columns={2} gap={2} marginTop='24px'>
+          <SimpleGrid columns={2} gap={2} marginTop='24px' fontSize={['xs', 'sm']}>
             <Link 
               as={RouteLink}
               to="/bikes"
@@ -87,7 +87,7 @@ export default function LandingPage(){
               WhatsApp
             </Link>
           </SimpleGrid>
-          <Text color='#fff' margin='24px'>&copy; Vehicly {year}</Text>
+          <Text color='#fff' margin='24px' fontSize={['xs', 'sm', 'xl']}>&copy; Vehicly {year}</Text>
         </Flex>
       </Center>
     </Box>
