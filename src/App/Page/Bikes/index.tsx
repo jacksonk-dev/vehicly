@@ -41,7 +41,7 @@ export default function BikesPage(){
               Bikes On Sale
           </Flex>
         </Heading>
-        <SimpleGrid gap={[12, 4]} columns={[1, 2, 3]} marginTop='24px'>
+        <SimpleGrid gap={[4]} columns={[1, 2, 3]}>
           {
             bikes.map((bike: Bike) => (
               <SimpleGrid 

@@ -20,18 +20,17 @@ const bikes: Bike[] =  [
       'Assets/Images/Bikes/1/virago_1.jpg'
     ]
   },
-  // {
-  //   id: 'honda-1',
-  //   make: 'Honda',
-  //   model: 'Steed',
-  //   price: 'UGX 8M',
-  //   engineCapacity: '400cc',
-  //   extraLightsIncluded: 'Yes',
-  //   images: [
-  //     'Assets/Images/Bikes/1/bg.png',
-  //     'Assets/Images/Bikes/1/bg.jpeg'
-  //   ]
-  // }
+  {
+    id: 'honda-1',
+    make: 'Honda',
+    model: 'Steed',
+    price: 'UGX 8M',
+    engineCapacity: '400cc',
+    extraLightsIncluded: 'Yes',
+    images: [
+      'Assets/Images/Bikes/1/virago_1.jpg'
+    ]
+  }
 ];
 
 export default bikes;

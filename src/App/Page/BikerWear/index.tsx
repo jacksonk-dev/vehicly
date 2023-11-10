@@ -43,7 +43,7 @@ export default function BikerWearPage(){
         {
           bikerWears.length
             ? (
-              <SimpleGrid gap={[12, 4]} columns={[1, 2, 3, 4]} marginTop='24px'>
+              <SimpleGrid gap={[4]} columns={[1, 2, 3, 4]}>
                 {
                   bikerWears.map((bikerWear: BikerWear) => (
                     <SimpleGrid
