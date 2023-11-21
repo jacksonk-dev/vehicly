@@ -1,6 +1,9 @@
 import { Link as RouteLink } from "react-router-dom";
 import { Flex, Center, Heading, Text, Box, Image, ScaleFade, Link, SimpleGrid } from "@chakra-ui/react";
 
+
+import links
+  from "App/Router/links";
 export default function LandingPage(){
   const year = new Date().getFullYear();
 
@@ -33,61 +36,35 @@ export default function LandingPage(){
             Vehicle, spare parts and accessories dealership. Make your order below.
           </Text>
           <SimpleGrid columns={2} gap={2} marginTop='24px' fontSize={['xs', 'sm']}>
-            <Link 
-              as={RouteLink}
-              to="/bikes"
-              textAlign='center'
-              width={{ base: "140px", sm: "180px", md: "240px" }}
-              padding='12px 24px'
-              bgColor='inherit'
-              border='1px solid'
-              borderColor='yellow.200'
-              color='#fff' fontWeight='300'
-              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
-            >
-              Bikes
-            </Link>
-            <Link 
-              as={RouteLink}
-              to="/biker-wear"
-              textAlign='center'
-              padding='12px 24px'
-              bgColor='inherit'
-              border='1px solid'
-              borderColor='yellow.200'
-              color='#fff' fontWeight='300'
-              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
-            >
-              Biker Wear
-            </Link>
-            <Link 
-              as={RouteLink}
-              to="/accessories"
-              textAlign='center'
-              padding='12px 24px'
-              bgColor='inherit'
-              border='1px solid'
-              borderColor='yellow.200'
-              color='#fff' fontWeight='300'
-              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
-            >
-              Accessories
-            </Link>
-            <Link 
-              href="https://wa.me/c/256786202161"
-              target="_blank"
-              textAlign='center'
-              padding='12px 24px'
-              bgColor='inherit'
-              border='1px solid'
-              borderColor='yellow.200'
-              color='#fff' fontWeight='300'
-              _hover={{ color: 'yellow.200', borderColor: 'yellow.500'}}
-            >
-              WhatsApp
-            </Link>
+            {
+              links.map(({label, to, href, blank }, index) => {
+                const reactKey = `link-${index}`;
+
+                return (
+                  <Link 
+                    key={reactKey}
+                    as={to ? RouteLink : undefined}
+                    to={to as string}
+                    textAlign='center'
+                    width={{ base: "140px", sm: "180px", md: "240px" }}
+                    padding='12px 24px'
+                    bgColor='inherit'
+                    border='1px solid'
+                    backgroundColor='yellow.200'
+                    color='#000' 
+                    fontWeight='900'
+                    fontSize='15px'
+                    _hover={{ color: 'yellow.200', backgroundColor: '#000'}}
+                    target={blank ? 'blank' : undefined}
+                    href={href}
+                  >
+                    {label}
+                  </Link>
+                );
+              })
+            }
           </SimpleGrid>
-          <Text color='#fff' margin='24px' fontSize={['xs', 'sm', 'xl']}>&copy; Vehicly {year}</Text>
+          <Text color='#fff' margin='24px' fontSize={['xs', 'sm']}>&copy; Vehicly {year}</Text>
         </Flex>
       </Center>
     </Box>
